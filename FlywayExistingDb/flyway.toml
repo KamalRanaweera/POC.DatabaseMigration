@@ -1,6 +1,6 @@
 databaseType = "SqlServer"
-id = "df0fcc8f-a6a1-4ea7-9cf7-7c1b583f498e"
-name = "FlywayLegacyDb"
+id = "3816c71b-5357-42fe-836b-411be4727f38"
+name = "FlywayExistingDb"
 
 [flyway]
 defaultSchema = "dbo"
@@ -117,6 +117,6 @@ ignoreWithElementOrder = true
 ignoreWithEncryption = false
 ignoreWithNoCheck = true
 
-[environments.target2]
-url = "jdbc:sqlserver://localhost:1434;databaseName=flyway_stage;encrypt=false;integratedSecurity=true;trustServerCertificate=true"
-displayName = "Flyway Stage"
+[environments.target3]
+url = "jdbc:sqlserver://localhost:1434;databaseName=flyway_pre-existing_dev;encrypt=false;integratedSecurity=true;trustServerCertificate=true"
+displayName = "Existing Dev Database"
